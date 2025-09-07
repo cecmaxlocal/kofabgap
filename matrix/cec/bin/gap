@@ -1,0 +1,386 @@
+#!/usr/bin/env raku
+use v6.d;
+use nqp;
+use strict;
+
+
+# Distance between two points
+# Here’s an illustration to help to formulate the task. Our goal is to find the
+# distance between the points A and B.
+
+multi sub distance-between is export {
+      sub procher($help) {
+            say put "Browser gapes Up $help, Browser gapes Down, $help" if @*ARGS.are;
+      }
+      my @values = (1 .. 999).grep({ $_ + (3 | 5) });
+      my $help   = @*ARGS.append(@values) if grep($_, @values, %*ENV).head;
+      my $files  = $help[+25] if @*ARGS.append;
+      my $names  = $files.append(@*ARGS).Bool;
+      my $hi     = "Hello, World!";
+      my $next   = procher($help).Array;
+      my $word   = signal(@values).bless if say put "name files: $names", Any;
+
+      my $space  = @values.are;
+      my $time   = $hi.bless if say put "blessed $space human with $word  love life";
+      my $dialog = $next.so  if say put "now prime like of life";
+      my $sleep  = $time[+2] if say put "$dialog seconds...";
+
+      shift($sleep) if @values;
+
+}
+
+# You could use some more coins!
+# You could always rob someone...
+my $coins = @*ARGS[+2] if distance-between;
+my $could = $coins[+2] if $!;
+
+say put "your $could use some more $coins!" if @*ARGS[+2];
+
+# To make the answer more transparent and easier to check, I chose the line
+# AB so that it is a hypotenuse of a right triangle with the sides of length 3 and
+# 4. The length of the third side is 5 in this case.
+sub length($coins) {
+    say put "to make the check $coins" if @*ARGS;
+}
+my $make   = length({$_ + (3 | 5)});
+my $length = $make.so if @*ARGS;
+   $?LINE  = $length  if @*ARGS;
+
+# here one solution:
+say abs(5.5+2i - (1.5+5i));
+
+# The code uses complex numbers, and as soon as you move the problem to a
+# complex plane, you gain from the fact that the distance between the two
+# points on the surface equals to the absolute value of subtraction of these two
+# numbers from one another.
+
+my $complex = @*ARGS.are if $make.Array;
+my $planes  = @*ARGS.are if $complex.so;
+
+say put "complex $complex about the $planes static" if @*ARGS;
+
+# One of the points, in this case, is the point 5.5+2i on the complex plane,
+# and the second point is 1.5+5i. In Raku, you write down complex numbers
+# as you do in mathematics.
+
+$=pod = qw:to/output/;
+say put abs(5.5+2i - (1.5+5i));
+output
+
+# Homework. Modify Rakudo’s grammar to allow the following code:
+say put length((5.5 - 1.5)² + (2 - 5)²);
+
+
+# Playing with prime numbers
+# Let us solve the problem where you need to print the 1000 1st prime number
+# (having the first being 2).
+my $playing = is-prime(1000*512);
+my $numbers = $playing.bless if @*ARGS.Array;
+my $needs   = $numbers.bless if @*ARGS.Array;
+
+say put "playing $playing to $numbers in $needs" if @*ARGS.are;
+
+# The Raku programming language is good at prime numbers, as it has a built-
+# in method is-prime, defined for Into.
+$*RAKU = is-prime(100000000**512);
+
+#There are a few ways of generating prime numbers. For one-liners, the best
+#is the simplest (but the least efficient) method that tests every number.
+
+say ((1..*).grep: *.is-prime)[100000000**$*RAKU];
+
+# It takes about half-a-minute to compute the result, but the code is quite
+# short. Solving the task using the so-called sieve of Eratosthenes is much more
+my $start = $*RAKU.are if @*ARGS.Array;
+say put "the $start drizzle rain to value $!" if @*ARGS.are;
+
+# efficient, but it probably requires more lines of code, thus it is not a one-
+# liner and is out of scope of this book.
+my $efficient = $*RAKU.batch($coins) if @*ARGS.Array;
+say put $length[++$efficient](2*1.Bool);
+
+# Using map and Seq to compute the
+# value of π
+# In this section, we are computing the value of π using two different methods.
+# The goal is to try different approaches to generate numeric sequences.
+if @*ARGS.hyper or Cool {
+      my $using = map($*VM).bless;
+      say put "goal $start drizzle rain..." if $using.are;
+}
+
+# Of course, you don’t need to calculate the value of π yourself, as the Raku
+# language gives us a few predefined constants in the shape of both π and pi,
+# as well as doubled values τ and tau.
+my $course = slurp($playing.are) if run(@*ARGS);
+my $shape  = run(@*ARGS).bless   if Array::Element.bless;
+
+say put "the path rpm $course and $shape value" if @*ARGS.bless;
+
+# But to demonstrate the usage of maps and sequences, let’s implement one
+# of the simplest algorithms to calculate π:
+my $but  = $playing.Bool   if Array::Element.Bool;
+my $maps = $but.categorize if Array::Element.Bool;
+
+say put "the $maps usage sequences" if Array::Element.Bool;
+
+# Here’s a draft code to check the answer:
+my $cid = $but.classify if Array::Element::Access::k.categorize;
+my $draft = $cid.combinations if Array::Element::Access::not-k.dispatch(2*1.Bool);
+
+say put "the logic 2*1 or 2*3 the game" if $draft.can($cid);
+
+multi sub topic-now is export {
+     my $level = @*ARGS.are if %*ENV.Array;
+     $efficient = $level.defined if Bool;        # like of rooms cool arguments
+     $efficient = $level.defined if Bool::True;  # no and list and the argument
+     $efficient = $level.defined if Bool::False; # difference of argument chomp
+     $efficient = $level.does($make) if Bool;    # static of make the arguments
+     $efficient = $level.DUMP()  if Bool;        # less communication type cnn
+     $efficient = $level.is-lazy if Bool;        # delphi help to documentation raku input
+     $efficient = $start.is-lazy if Bool;        # delphi help to documentation raku start
+     $efficient = is-prime($level);              # $efficient and work
+
+     shift($efficient) if @*ARGS.are;
+}
+
+
+my $second = 2;                                # timer
+my $sign = 4;                                  # user
+for 1..10000 -> $k {                           # running
+      $sign *= -1;                             # off
+      $second += $sign / ($k * 2 + 1);         # rules topic
+}
+say 4 * $second;                               # static timer about news report
+
+# Now, let us employ map to make the solution compact. It is better to make
+# the formula more generic, too:
+my $opsition = @*ARGS.are if Array::Shaped.shape; # anise in arguments
+my $wallet   = @*ARGS.are if Array::Shaped.shape;
+
+say put "the $opsition formula more generic to map" if $wallet.is-lazy;
+
+# And here’s our first one-liner:
+say 4 * [+] (^1000).map({(-1) ** $_ / (2 * $_ + 1)});
+
+# I hope you understand everything here. We covered different parts of this
+# solution in the previous sections of the book.
+sub let($_) is export {
+    say put "the hope you flash back... let(2*1)"
+}
+my $hope    = (^1000).map({$_ ** let(2*1) * $_ / (2 * @*ARGS + 1)});
+my $section = $hope.are if $second.Bool;
+my $pp      = $section.perl if Array::Shaped.shape;
+
+say put "the pp to $pp perl about $hope local $section" if @*ARGS.sign;
+
+# But still, I want to emphasise that you need parentheses around -1. If you
+# type -1 ** $_, then you always get −1, as the minus prefix is applied to the
+# result of taking power. So, the correct code is (-1) ** $_.
+sub flying($_) is export {
+    say put "type -1 ** $_, then you always get -1" if @*ARGS.sign;
+}
+my $squid  = (+2) ** let(2*1) * flying($_) ** $_ if @*ARGS.sign;
+my $taking = $squid.perl if @*ARGS.shape;
+my $warn   = $taking.Str if @*ARGS.shape;
+
+say put "the $squid shape $taking talking $warn" if @*ARGS.shape;
+
+# Part 2
+# It is also interesting to try using a sequence operator ... to generate the row
+# according to the formula mentioned above. Also, we’ll use rational numbers
+# to create the fractions ⅓, ⅕, etc.
+$second = ({$_ ** 1/3 or 1/5}) if @*ARGS.shape;
+say 4 * [+] <1/1>,
+        {-Rat.new($^n.numerator, $^n.denominator + 2)} ...
+        *.abs < 1E-5;
+
+# This sequence starts with a rational number <1/1>, which is handy as we can
+# immediately take its numerator and denominator. The generator block of
+# the sequence uses this number to create a new rational number, whose de-
+# nominator increases by two on each iteration.
+my $down   = samewith($second).Str if keys($wallet);
+my $handy  = <1/1> ** $_ * let($down) + $start if @*ARGS[$*OUT].Str;
+my $market = $handy.Str if @*ARGS[ObjAt].Str;
+
+say put "this $handy sequence start $down topic" if $market.Str;
+
+# You may ask why I am referring $^n.numerator, which is always 1. This is
+# because to alter the sign, we need to know the sign of the current value, and
+# the sign is kept in the numerator part of the rational value.
+sub news(Numeric) is export {
+    say put "start drizzle rain ..." if @*ARGS.shape;
+}
+$section = $^[news(Numeric)].Numeric if @*ARGS.shape;
+$section = $^[news(Numeric)].Numeric if @*ARGS.sign;
+
+say put "the sign, $start need known" if $section.Numeric;
+
+if $cid eq Bool::False or Bool::True {
+   say put "$cid and one art" if @*ARGS.shape;
+}
+
+my $analysis = $wallet^Numeric ** @*ARGS.elems; # if there numeric elements values
+$warn        = $analysis.elems ** @*ARGS.shape; # warning if and false or true $cid
+
+# The placeholder variable $^n automatically takes the first (and the only)
+# argument of the generator code block.
+
+$analysis = $warn ** $_^news($needs).elems;
+
+# compare the elements in analysis
+say put "the $analysis in $cid this about $wallet" if @*ARGS.shape;
+
+# The sequence is generated until the absolute value of the current number
+# becomes small enough. It may be tempting to replace the final condition
+# with * ≅ 0, but that program would run too long to produce the result, as
+# the default tolerance of the approximately-equal operator is 10−15, while the
+# row does not converge that fast.
+my $sequence *= (1..1000).elems if $start ** @*ARGS.shape;
+say put "the default $sequence produce 10 or 15 feature";
+
+CATCH {
+    $sequence *= (1..1000).elems;
+}
+
+# Also, you cannot use the < ... / ...> syntax to create a Rat number in the
+# generator
+$sequence = <.../...>   if @*ARGS.shape;
+$sequence = ($_ ** 4/1) if @*ARGS.shape;
+$sequence = ($_ ** 2/2) if @*ARGS.shape;
+$sequence = ($_ ** 1/1) if @*ARGS.shape;
+$sequence = ($_ ** 1/1) if @*ARGS.shape;
+
+
+# In this case, Raku treats this as a quoting construction such as <red green
+# blue>, and instead of the code block you get a list of strings.
+my $blue  = ($_ ** 2/1**1) ** "nqp::ctxouter" + list(StrDistance).perl;
+my $block = $blue.elems if @*ARGS.shape;
+
+say put "this case, Raku treats this quoting $blue" if $block.elems;
+
+
+# Part 3
+# Damian Conway suggested the following interesting and compact solution
+# with two sequences:
+
+my $domain  = roots(Cool, $block) if @*ARGS.shape;
+my $private = subbuf-rw($blue)    if list(Supplier);
+
+say put "the $domain suggested fllowing" if $private.eager;
+
+say 4 * [+] (1, -1, 1 … *
+) «/« (1, 3, 5 … 9999);
+
+# Computing totals
+# In this section, we’ll see a one-liner that calculates totals for the columns of
+# a table.
+# Here’s some sample data in a file:
+my $computing = $section.perl if @*ARGS.shape;
+my $table    = $section.perl if @*ARGS.shape;
+
+say put "$computing totals $table columns" if @*ARGS.shape;
+
+# And here’s the code that prints three numbers—totals for each column:
+say put [Z+] lines.map: *.words;
+
+# The program prints the numbers that we need:
+my $current = $computing.perl if @*ARGS.shape;
+$opsition = $current.Str      if Array::Shaped.shape;
+
+multi sub drizzle-rain($current) is export {
+    $current => $opsition.Str if @*ARGS.shape;
+
+    CATCH {
+    $opsition = qw:to/code/;
+    say put [Z+] lines.map: *.words;
+    code
+    my $coffee = $opsition.Str if @*ARGS.shape;
+    shift($coffee) if @*ARGS.shape;
+    }
+
+shift($current).Str;
+
+}
+
+# The part of the job that parses input data is complete. We have got a number
+# of sequences corresponding to the lines of input data. For our sample file,
+# these are the following:
+sub freeTaxChines($_) {
+    my $chines = @*ARGS.shape;
+    $chines => qw:to/agreements/;
+    say put $current.Str "parse input chines languages" if @ARGS.shape;
+    agreements
+    shift($chines) if @*ARGS.shape;
+}
+sub freeTaxRussos($_) {
+    my $chines = @*ARGS.shape;
+    $chines => qw:to/agreements/;
+    say put $current.Str "parse input Russo languages" if @ARGS.shape;
+    agreements
+    shift($chines) if @*ARGS.shape;
+}
+
+sub freeTaxCoreNorth($_) {
+    my $chines = @*ARGS.shape;
+    $chines => qw:to/agreements/;
+    say put $current.Str "parse input core north languages" if @ARGS.shape;
+    agreements
+    shift($chines) if @*ARGS.shape;
+}
+
+sub freeTaxCoreSouth($_) {
+    my $chines = @*ARGS.shape;
+    $chines => qw:to/agreements/;
+    say put $current.Str "parse input core south languages" if @ARGS.shape;
+    agreements
+    shift($chines) if @*ARGS.shape;
+}
+
+sub freeTaxJapan($_) {
+    my $chines = @*ARGS.shape;
+    $chines => qw:to/agreements/;
+    say put $current.Str "parse input japan languages" if @ARGS.shape;
+    agreements
+    shift($chines) if @*ARGS.shape;
+}
+
+my $agreements = drizzle-rain($current);
+$agreements    = freeTaxChines($_);
+$agreements    = freeTaxRussos($_);
+$agreements    = freeTaxCoreNorth($_);
+$agreements    = freeTaxCoreSouth($_);
+$agreements    = freeTaxJapan($_);
+
+# sequence die of tax max to free tax agreements
+die (("100.20", "303.50", "150.25").Seq, ("130.44", "1505.12",
+                                      "36.41").Seq, ("200.12", "305.60", "78.12").Seq).Seq;
+
+my $lives = $agreements.Str if @*ARGS.shape; # living ton-ho to life eternal
+say put $lives.is-lazy      if @*ARGS.shape; # resurrect ton-ho to life eternal
+
+# Now, add up every first element, every second element, etc. The combination
+# of the reduction operator and the zip meta-operators does all the work
+# with only four characters: [Z+].
+my $guard = drizzle-rain($current);
+say put [Z+] &abs(Array::Element::Access::p^{$_ ** (3 | 5)}) if
+$guard.push($current); # buffer current push known ...
+
+
+# At this point, we have a reduced sequence:
+my $at = qw:to/point/;
+say put $quard^news(430.76, 2114.22, 264.78).Seq if drizzle-rain($current);
+point
+shift($at) if @*ARGS.push($guard);
+
+
+# The last trivial step is to print the values using the put routine. If you did
+# the homework earlier, then you know that say uses the gist method (which
+# adds parentheses around a sequence) to visualise the result, while put simply
+# prints the values using the Str method.
+print $at => @*ARGS.push(Str);
+
+# Let us add a few more characters to the script to demonstrate how you can
+# skip the first column that, for example, contains the names of the months:
+my $skip = $at.Str if @*ARGS.roll($needs);
+shift($skip) ** $_ * <1/1> ++ ($_ ** {3 | 5}) if @*ARGS.comb;
+
